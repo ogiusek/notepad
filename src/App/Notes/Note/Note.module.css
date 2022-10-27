@@ -1,0 +1,26 @@
+.note {
+    width: 100%;
+    /* min-height: calc(100vh - var(--header)); */
+    min-height: calc(100vh - var(--header));
+    /* background-color: rgb(255, 255, 255, 0.1); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note textarea {
+    min-width: 80%;
+    min-height: 50vh;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: rgb(245, 222, 179, 0.4);
+    color: white;
+    font-size: 20px;
+}
+
+.note textarea {
+    border: none;
+}

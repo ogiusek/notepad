@@ -1,0 +1,130 @@
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 3px white;
+    border-radius: 50px;
+    padding: 0;
+    transition: 0.3s;
+
+    width: 75%;
+    min-height: 5vh;
+
+    margin-top: 30px;
+
+    background-color: transparent;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    color: white;
+}
+
+.addIcon {
+    min-height: 15vh;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.add input {
+    border-radius: 10px;
+    font-size: calc(5vh - 6px);
+    max-width: 70vw;
+    /* margin-right: 5vw; */
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add button {
+    border-radius: 10px;
+    font-size: calc((5vh - 6px) / 1.5);
+    border: none;
+    color: white;
+    background-color: transparent;
+    transition: 1s;
+
+    -webkit-box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.4);
+}
+
+.add button:hover {
+    background-color: wheat;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.add .cancel:hover {
+    background-color: red;
+}
+
+.add,
+.icon h1 {
+    /* position: absolute; */
+    /* margin-left: 5%; */
+    position: absolute;
+    font-size: calc(5vh - 6px);
+    color: white;
+}
+
+
+.back {
+    border-radius: 50px;
+
+    background-color: rgb(245, 222, 179, 0.7);
+    height: 100%;
+    width: 100%;
+    width: 0;
+    transition: 1s;
+}
+
+.icon:hover .back,
+.button:hover .back {
+    width: 100%;
+}
+
+.trash {
+    position: absolute;
+    /* left: 90vw; */
+    right: calc(7.5vw - (5vh - 18px));
+    border-radius: 50px;
+    font-size: calc(5vh - 18px);
+    border: none;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.trash:hover {
+    background-color: red;
+}

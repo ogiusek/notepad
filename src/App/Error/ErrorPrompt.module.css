@@ -1,0 +1,63 @@
+.wraper {
+    position: fixed;
+    top: 30vh;
+    bottom: 30vh;
+
+    left: 30vw;
+    right: 30vw;
+
+    background-color: wheat;
+    border-radius: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+
+}
+
+.wraper h1 {
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "Courier New";
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button {
+    color: white;
+    /* background-color: wheat; */
+    padding: 10px;
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 1.5vw;
+}
+
+.cancel {
+    background-color: red;
+}
+
+.confirm {
+    background-color: greenyellow;
+}

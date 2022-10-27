@@ -1,0 +1,88 @@
+.header {
+    /* background-color: #E8DFCA; */
+    background-color: wheat;
+    height: var(--header);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    --horizontalHead: 0px;
+    --vertricalHead: -2vh;
+    --blurHead: 4vh;
+    --spreadHead: 1vh;
+    -webkit-box-shadow: inset var(--horizontalHead) var(--vertricalHead) var(--blurHead) var(--spreadHead) rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset var(--horizontalHead) var(--vertricalHead) var(--blurHead) var(--spreadHead) rgba(0, 0, 0, 0.5);
+    box-shadow: inset var(--horizontalHead) var(--vertricalHead) var(--blurHead) var(--spreadHead) rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-left: calc(var(--header) / 10);
+    height: calc(var(--header) / 1.2);
+    width: calc(var(--header) / 1.2);
+}
+
+.button {
+    --pad: 20px;
+    --horizontalButton: 0;
+    --vertricalButton: 0;
+    --blurButton: 3vh;
+
+    margin-right: calc(var(--pad) * 2);
+    color: var(--backgroundColor);
+
+    padding-top: calc(var(--pad) / 2);
+    padding-bottom: calc(var(--pad) / 2);
+    padding-left: var(--pad);
+    padding-right: var(--pad);
+
+    -webkit-box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0);
+    -moz-box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0);
+    box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0);
+
+    border: solid 5px var(--backgroundColor);
+    background-color: transparent;
+    border-radius: calc(var(--pad) + var(--pad));
+
+    font-size: 3vh;
+    transition: 1s;
+}
+
+.button:hover {
+    -webkit-box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0, 0.3);
+    -moz-box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0, 0.3);
+    box-shadow: inset var(--horizontalButton) var(--vertricalButton) var(--blurButton) rgb(0, 0, 0, 0.3);
+
+    transform: scale(120%);
+}
+
+.user {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.login {
+    /* --backgroundColor: rgb(184, 134, 11, 1); */
+    --backgroundColor: green;
+}
+
+.register {
+    /* --backgroundColor: lightseagreen; */
+    /* background-color: orange;  255 165 0*/
+    /* --backgroundColor: rgb(calc(245 / 1.25), calc(222 / 1.25), calc(179 / 2.75)); */
+    --backgroundColor: rgb(calc((245 + 255) / 2.4), calc((222 + 165) / 2.4), calc((179) / 2.6));
+}
+
+.logout {
+    --backgroundColor: red;
+}
+
+.exitNote {
+    --backgroundColor: #7895B2;
+}

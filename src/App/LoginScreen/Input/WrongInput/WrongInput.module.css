@@ -1,0 +1,23 @@
+.wraper {
+    position: fixed;
+    background-color: red;
+    color: white;
+
+    font-size: 2vw;
+    text-align: center;
+
+    border-radius: 10px;
+    padding: 3px;
+    max-width: 15vw;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+}
+
+@media all and (max-width:100vh) {
+    .wraper {
+        font-size: 15px;
+    }
+}
