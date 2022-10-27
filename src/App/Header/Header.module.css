@@ -1,5 +1,4 @@
 .header {
-    /* background-color: #E8DFCA; */
     background-color: wheat;
     height: var(--header);
 
@@ -68,14 +67,10 @@
 }
 
 .login {
-    /* --backgroundColor: rgb(184, 134, 11, 1); */
     --backgroundColor: green;
 }
 
 .register {
-    /* --backgroundColor: lightseagreen; */
-    /* background-color: orange;  255 165 0*/
-    /* --backgroundColor: rgb(calc(245 / 1.25), calc(222 / 1.25), calc(179 / 2.75)); */
     --backgroundColor: rgb(calc((245 + 255) / 2.4), calc((222 + 165) / 2.4), calc((179) / 2.6));
 }
 

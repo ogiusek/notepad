@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-// import ReactDOM from "react-dom";
 import style from "../MainLogin.module.css";
 import reducer from "../reducer";
 
@@ -28,7 +27,6 @@ function Login(props) {
     const valid = login.valid === true && password.valid === true;
     return (
         <form onSubmit={submitHandler}>
-            {/* {ReactDOM.createPortal(<div>dick</div>, document.getElementById('login-mistakes'))} */}
             <main className={style.form}>
                 <div className={style.inputs}>
                     <Input value={login.value}

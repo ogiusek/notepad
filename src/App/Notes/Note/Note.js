@@ -21,17 +21,11 @@ function Note(props) {
 
     const handleKeyDown = (event) => {
         setNotes(event.target.value);
-        // setNotes(event.target.value);
         let charCode = String.fromCharCode(event.which).toLowerCase();
         if ((event.ctrlKey || event.metaKey) && charCode === 's') {
             event.preventDefault();
             save();
         }
-        // else if ((event.ctrlKey || event.metaKey) && charCode === 'c') {
-        //     alert("CTRL+C Pressed");
-        // } else if ((event.ctrlKey || event.metaKey) && charCode === 'v') {
-        //     alert("CTRL+V Pressed");
-        // }
     }
     const save = async () => {
         const response = await fetch(link + `accounts/${props.user}/notes.json`, {
@@ -52,7 +46,6 @@ function Note(props) {
     }, [notes]);
     return (<div className={style.note} onKeyDown={handleKeyDown}>
         <textarea id={style.note} value={notes} onChange={notesHandler}>
-            {/* {notes} */}
         </textarea>
     </div >);
 }

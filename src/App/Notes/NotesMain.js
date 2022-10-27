@@ -19,12 +19,3 @@ function NotesMain(props) {
 }
 
 export default NotesMain;
-// const response = await fetch('https://testdatabasereact-default-rtdb.firebaseio.com/movies.json', {
-//       // const response = await fetch('./database/images.json', {
-//       method: 'PATCH',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify({
-//         [movie]: null
-//       })
-//     });
-//     await response.json();

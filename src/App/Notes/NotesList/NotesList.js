@@ -52,8 +52,4 @@ function NotesList(props) {
 
 }
 
-const foundNote = async (note) => {
-    return false;
-}
-
 export default NotesList;

@@ -2,7 +2,6 @@ import React from "react";
 import style from "./Header.module.css";
 
 import Error from "../Error/Error";
-import logo from "./logo.png";
 import AuthContext from "../AuthContext";
 import headerUrl from "./headerUrl";
 
@@ -41,7 +40,6 @@ function Header(props) {
         <div className={style.header}>
             <img className={style.logo} src={headerUrl} />
             <div className={style.user}>
-                {/* {typeof props.user === typeof '' && props.user.split('@')[0].toUpperCase()} */}
                 {typeof props.user === typeof '' && props.user.split('@')[0]}
                 {typeof props.note === typeof '' && '/' + props.note}
             </div>
