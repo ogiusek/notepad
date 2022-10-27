@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import link from "../../link";
 import style from "./Note.module.css";
+
+import link from "../../link/link";
 
 function Note(props) {
     const [notes, setNotes] = useState('');

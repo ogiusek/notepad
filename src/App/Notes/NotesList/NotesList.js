@@ -3,7 +3,8 @@ import style from "./NotesList.module.css";
 
 import NoteIcon from "./NoteIcon/NoteIcon";
 import AddNoteIcon from "./NoteIcon/NoteIconAdd";
-import link from "../../link";
+import link from "../../link/link";
+
 function NotesList(props) {
     const [notesList, setNotesList] = useState([]);
     const fetchNotes = async () => {

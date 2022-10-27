@@ -3,7 +3,7 @@ import style from "./NoteIcon.module.css";
 
 import AuthContext from "../../../AuthContext";
 import Error from "../../../Error/Error";
-import link from "../../../link";
+import link from "../../../link/link";
 
 function AddNoteIcon(props) {
     const ctx = useContext(AuthContext);

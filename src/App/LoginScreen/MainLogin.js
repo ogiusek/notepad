@@ -4,7 +4,7 @@ import Register from "./RegisterScreen/Register";
 import Login from "./Login/Login";
 import Error from "../Error/Error";
 import AuthContext from "../AuthContext";
-import link from "../link";
+import link from "../link/link";
 
 function MainLogin(props) {
     const ctx = React.useContext(AuthContext);
